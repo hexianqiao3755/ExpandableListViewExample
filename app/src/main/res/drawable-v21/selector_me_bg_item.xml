@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#dddddd">
+    <!--android5.0(api21)以上才能使用, 波纹点击效果-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/shape_whilte_bg" />
+</ripple>

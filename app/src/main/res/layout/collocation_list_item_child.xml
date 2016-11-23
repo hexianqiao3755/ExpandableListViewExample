@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_me_bg_item"
+        android:paddingBottom="28px"
+        android:paddingLeft="24px"
+        android:paddingRight="24px"
+        android:paddingTop="30px">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_goods_img"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:background="@drawable/shape_cart_goods_border"
+            android:padding="1dp"
+            fresco:placeholderImage="@mipmap/icon_loading_bg" />
+
+        <TextView
+            android:id="@+id/tv_goods_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#222222"
+            android:textSize="30px" />
+
+        <View
+            android:layout_width="118px"
+            android:layout_height="1px" />
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="28px"
+            android:src="@mipmap/icon_right" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="24px"
+        android:background="#dddddd" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="24px"
+            android:paddingRight="24px"
+            android:paddingTop="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="套餐价格:"
+                android:textColor="#888888"
+                android:textSize="30px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="￥"
+                android:textColor="#ec0f38"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/tv_collocation_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ec0f38"
+                android:textSize="30px" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_add_cart"
+                android:layout_width="180px"
+                android:layout_height="50px"
+                android:background="@drawable/selector_add_cart_red_btn"
+                android:gravity="center"
+                android:text="加入购物车"
+                android:textColor="@drawable/selector_add_cart_red_tv"
+                android:textSize="28px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginTop="20px"
+            android:background="#eeeff3" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

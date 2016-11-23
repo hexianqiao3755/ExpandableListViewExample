@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_title_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ec0f38"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="优惠套餐"
+                    android:textColor="#ffffff"
+                    android:textSize="32px" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_back"
+                    android:layout_width="100px"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="44px"
+                        android:layout_height="44px"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_back" />
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoFrameLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ExpandableListView
+        android:id="@+id/elv_collocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeff3"
+        android:divider="#eeeff3"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="@null" />
+</com.zhy.autolayout.AutoLinearLayout>
