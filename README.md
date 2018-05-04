@@ -7,6 +7,7 @@ ___
 ##### 后来发现了`Android`也给我们提供了`ExpandableListView`类，完美实现这样类似的需求, 极大的方便了我们开发.
 
 Demo来自某个线上电商app的页面, 使用前先看看效果图
+
 ![demo演示](https://github.com/hexianqiao3755/ExpandableListViewExample/blob/master/example.gif)
 
 #### 1. 如果子条目需要响应click事件,必需返回true
